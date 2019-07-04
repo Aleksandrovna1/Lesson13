@@ -11,95 +11,109 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="header-icon-menu"><a href="#"><img src="img/menu-i.png"></a></div>
-            <div class="header-menu">Menu</div>
+    <header id="header">
+        <div class="wrapper header-flex">
+            <div class="menu">
+                <div class="header-menu icon"><a href="#"><img src="img/menu-i.png"></div>
+                <div class="header-menu">Menu</div></a>
+            </div>
             <div class="header-logo">
                 <div class="logo">DMT</div>
                 <p class="title-logo">Design Meets Tech</p>
             </div>
-        </div>
-        <form name="header-search" method="POST" action="#">
-            <input type="text" name="field-search" placeholder="Search">
-        </form>
+
+
+            <div class="header-search">
+                <a href="#">Search</a>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="wrapper">
-            <section class="first-section">
-                <p class="first-section-name">Home</p>
-                <h1 class="first-section-title">Buster<br>Bulb</h1>
-                <p class="first-section-descr">
-                    The first designer<br>
-                    LED bulb, finished <br>
-                    in gold glass.
-                </p>
-                <a class="readmore" href="#">Read more</a>
-            </section>
+            <div class="main-flex">
+                <div class="first-row flex-row">
+                    <section class="flex-section first-section section-with-bg">
+                        <p class="first-section-name">Home</p>
+                        <h1 class="first-section-title">Buster Bulb</h1>
+                        <div class="first-section-descr">
+                            The first designer
+                            LED bulb, finished 
+                            in gold glass.
+                        </div>
+                        <a class="readmore" href="#">Read more</a>
+                    </section>
+                </div>
 
-            <section class="second-section">
-                <p class="second-section-name">Accessories</p>
-                <h2 class="second-section-title">Peak</h2>
-                <p class="second-section-descr">
-                    A playful pouch<br>
-                    with a trick up its<br>
-                    sleeve
-                </p>
-                <a class="readmore" href="#">Read more</a>
-            </section>
+                <div class="flex-row second-row">
+                
+                    <section class="flex-section second-section section-with-bg">
+                        <p class="second-section-name">Accessories</p>
+                        <h2 class="second-section-title">Peak</h2>
+                        <div class="second-section-descr">
+                            A playful pouch
+                            with a trick up its
+                            sleeve
+                        </div>
+                        <a class="readmore" href="#">Read more</a>
+                    </section>
 
-            <section class="third-section">
-                <h2 class="third-section-title">Good Things</h2>
-                <p class="third-section-descr">
-                    ...<br>
-                    come to those who sign up<br>
-                    for our newsletter.
-                </p>
-                <form name="subscribe" method="POST" action="#" class="form-subscribe">
-                    <p><input type="email" name="email" value="Your email"></p>
-                    <p><input type="submit" value="Subscribe"></p>
-                </form>
-                <p class="third-section-subscribe-descr">
-                    We respect your privacy and we won’t<br>
-                    share your information.</p>
-            </section>
+                    <section class="flex-section third-section section-with-bg">
+                        <h2 class="third-section-title">Good Things</h2>
+                        <div class="third-section-descr">
+                            ...<br>
+                            come to those who sign up
+                            for our newsletter.
+                        </div>
+                        <form name="subscribe" method="POST" action="#" class="form-subscribe">
+                            <input type="email" name="email" value="Your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                        <div class="third-section-subscribe-descr">
+                            We respect your privacy and we won’t<br>
+                            share your information.</div>
+                    </section>
+                </div>
 
-            <section class="fourth-section">
-                <p class="fourth-section-name">Cameras</p>
-                <h3 class="fourth-section-title">Leica M</h3>
-                <a class="review" href="#">Review</a>
-            </section>
+                <div class="third-row flex-row">
+                    <section class="flex-section fourth-section section-with-bg">
+                        <div class="fourth-section-name">Cameras</div>
+                        <h3 class="fourth-section-title">Leica M</h3>
+                        <a class="review" href="#">Review</a>
+                    </section>
 
-            <section class="firth-section">
-                <p class="firth-section-name">Sound</p>
-                <h3 class="firth-section-title">
-                    Trobla <br>
-                    Amplifier</h3>
-                <a class="review" href="#">Review</a>
-            </section>
+                    <section class="flex-section firth-section section-with-bg">
+                        <div class="firth-section-name">Sound</div>
+                        <h3 class="firth-section-title">
+                            Trobla <br>
+                            Amplifier</h3>
+                        <a class="review" href="#">Review</a>
+                    </section>
 
-            <section class="sixth-section">
-                <p class="sixth-section-name">Cameras</p>
-                <h3 class="sixth-section-title">Leica D-Lux</h3>
-                <p class="sixth-section-descrt">
-                    Limited-edition DIesel <br>
-                    collaboration
-                </p>
-                <a class="readmore" href="#">Read more</a>
-            </section>
+                    <section class="flex-section sixth-section section-with-bg">
+                        <div class="sixth-section-name">Cameras</div>
+                        <h3 class="sixth-section-title">Leica D-Lux</h3>
+                        <div class="sixth-section-descr">
+                            Limited-edition DIesel 
+                            collaboration
+                        </div>
+                        <a class="readmore" href="#">Read more</a>
+                    </section>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="wrapper">
-            <p class="copyright">Copyright DMT</p>
+            <div class="footer-flex">
+            <div class="copyright">Copyright DMT</div>
             <div class="social">
                 <a href="#"><img src="img/facebook-i.png" alt=""></a>
-                <a href="#"><img src="img/twitter-i.png" alt=""></a>
+                <a href="#"><img src="img/twitter-i.png" alt="" class="twitter"></a>
             </div>
         </div>
+    </div>
     </footer>
 
 
@@ -107,3 +121,10 @@
 </body>
 
 </html>
+
+<!--кнопки все одинаковые, inline-block, только те залитые, 
+все надписи что в p могут быть одного стиля, padding и можно задать ширину блока
+position: releative; для кнопки position: absolute;
+наушники background: contain, background-position: right top
+в header wrapper display: flex; логотип margin: 0 0 auto auto
+в каждом блоке можно сдлеать flex-item и тогда read more margin: auto -->
