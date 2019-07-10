@@ -1,14 +1,12 @@
 @font-face {
     font-family: 'open_sansbold';
-    src: url('opensans-bold-webfont.woff2') format('woff2'),
-         url('opensans-bold-webfont.woff') format('woff');
+    src: url('opensans-bold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
  @font-face {
     font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2'),
-            url('opensans-regular-webfont.woff') format('woff');
+    src: url('opensans-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }body{
@@ -335,7 +333,7 @@ input[type="submit"]{
     font-family: 'open_sansregular';
 }
 #footer .footer-flex{
-    margin-top: 10px;
+    margin-top: -35px;
     margin-bottom: 60px;
     align-items: center;
     display: flex;
@@ -346,6 +344,9 @@ input[type="submit"]{
 }
 
 @media (max-width: 768px){
+    .wrapper{
+        margin-top: 20px;
+    }
     .header-flex {
         padding: 0 10px;
     }
@@ -366,16 +367,21 @@ input[type="submit"]{
         flex-basis: 35%;
         padding: 20px;
     }
-    .footer-flex{
-        padding: 0 10px;    }
+    #footer .footer-flex{
+        padding: 0 10px;
+       
+        margin-bottom: 25px;   }
 }
 
 @media (max-width: 320px){
+    .wrapper{
+        margin-top: 20px;
+    }
     .first-section{
         height: 420px;
         padding: 25px;
     }
-    .firth-section-title{
+    .first-section-title{
         font-size: 60px;
     }
     
@@ -417,6 +423,7 @@ input[type="submit"]{
         margin-right: 0;
         height: 350px;
         padding: 25px;
+        
     }
     .fourth-section-title{
         margin-top: 90px;
@@ -440,4 +447,5 @@ input[type="submit"]{
     }
     .review{
         margin-top: 10px;
+}
 }
