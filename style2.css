@@ -301,8 +301,6 @@ input[type="submit"]{
     background-color: #1ab467;
     background-image: url(img/foto-6.png);
     height: 423px;  
-   
-    
 }
 .sixth-section-name{
     text-transform: uppercase;
@@ -354,23 +352,21 @@ input[type="submit"]{
         flex-basis: 50%;
         margin-right: 0;
     }
-
     .third-section{
         flex-basis: 47%;
     }
     .fourth-section, .firth-section{
         flex-basis: 30%;
         padding: 20px;
-        
-        }
+    }
     .sixth-section{
         flex-basis: 35%;
         padding: 20px;
     }
     #footer .footer-flex{
         padding: 0 10px;
-       
-        margin-bottom: 25px;   }
+        margin-bottom: 25px;  
+    }
 }
 
 @media (max-width: 320px){
@@ -387,7 +383,6 @@ input[type="submit"]{
     
     .first-section-descr{
         font-size: 28px;
-       
     }
     
     .second-section {
@@ -416,7 +411,6 @@ input[type="submit"]{
     input{
         width: 60%; 
         font-size: 22px;
-        
     }
     .fourth-section{
         flex-basis: 100%;
@@ -428,17 +422,18 @@ input[type="submit"]{
     .fourth-section-title{
         margin-top: 90px;
         text-align: center;
-
+        padding-left: 55px;
     }
-    
     .firth-section{
         flex-basis: 100%;
         margin-right: 0;
         height: 350px;
         font-size: 44px;
         padding: 25px;
-        
-        }
+    }
+    .firth-section-title{
+    padding-left: 45px;
+}
     .sixth-section{
         flex-basis: 100%;
         margin-right: 0;
