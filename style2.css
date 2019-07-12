@@ -1,15 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 @font-face {
     font-family: 'open_sansbold';
     src: url('opensans-bold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
- @font-face {
-    font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}body{
+
+body{
     background-color: #3e3b4a;  
 }
 .wrapper{
@@ -44,7 +42,7 @@ p{
     font-size: 13px;
     color:#898691;
     margin: 0px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 .logo{
     font-size: 48px;
@@ -114,7 +112,7 @@ p{
     color: #ffffff;
     font-size: 36px;
     margin-bottom: 75px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .readmore{
@@ -161,7 +159,7 @@ p{
     color: #ffffff;
     font-size: 24px;
     margin-bottom: 75px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .third-section{
@@ -218,10 +216,8 @@ input[type="submit"]{
 }
 .third-section-subscribe-descr{
     font-size: 14px;
-    font-family: 'open_sansregular';
-    
+    font-family: 'Open Sans', sans-serif; 
 }
-
 
 .fourth-section{
     flex-basis: 25%;
@@ -233,9 +229,9 @@ input[type="submit"]{
     text-transform: uppercase;
     color: #ffc7b0;
     font-size: 14px;
-    text-align: center;
     font-family: 'open_sansbold';
     letter-spacing: 2.8px;
+    margin: 0 auto;
      
 }
 .fourth-section-title{
@@ -251,7 +247,7 @@ input[type="submit"]{
     max-width: 195px;
     color: #ffffff;
     font-size: 24px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 .review{
   /*margin: auto;*/
@@ -277,9 +273,9 @@ input[type="submit"]{
     text-transform: uppercase;
     color: #ffc7b0;
     font-size: 14px;
-    text-align: center;
     font-family: 'open_sansbold';
     letter-spacing: 2.8px;
+    margin: 0 auto;
 }
 .firth-section-title{
     font-size: 36px;
@@ -294,7 +290,7 @@ input[type="submit"]{
     max-width: 195px;
     color: #ffffff;
     font-size: 24px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 .sixth-section{
     flex-basis: 45%;
@@ -323,12 +319,12 @@ input[type="submit"]{
     max-width: 204px;
     color: #ffffff;
     font-size: 20px; 
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 .copyright{
     color: #898691;
     font-size: 14px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;
 }
 #footer .footer-flex{
     margin-top: -35px;
@@ -341,7 +337,7 @@ input[type="submit"]{
     margin-left: 24px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1015px){
     .wrapper{
         margin-top: 20px;
     }
@@ -366,6 +362,56 @@ input[type="submit"]{
     #footer .footer-flex{
         padding: 0 10px;
         margin-bottom: 25px;  
+    }
+}
+@media (max-width: 738px){
+        .second-section{      
+        flex-basis: 100%;
+    }
+       .third-section{
+        flex-basis: 49%;
+        padding: 15px;
+       }
+       .fourth-section{
+        flex-basis: 49%;
+        height: 485px;
+       }
+       .fourth-section-title{
+        margin:  auto;
+       }
+       .firth-section {
+           flex-basis: 49%;
+       }
+       .firth-section-title{
+        margin: auto;
+       }
+       .sixth-section{
+           flex-basis: 49%;
+       }
+}
+@media (max-width: 638px){
+    .third-section{
+        flex-basis: 100%;
+        height: 385px;
+    }
+    .fourth-section{
+        height: 423px;
+    }
+    .sixth-section{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 478px){
+    .fourth-section{
+        flex-basis: 100%;
+    }
+    .firth-section{
+        flex-basis: 100%;
+    }
+    .firth-section-title {
+        margin: auto;
+        padding-left: 0;
     }
 }
 
@@ -401,8 +447,9 @@ input[type="submit"]{
         height: 400px;
     }
     .third-section-title{
-        font-size: 34px;
-        margin-bottom: 20px;
+        font-size: 32px;
+        margin-bottom: 0;
+        white-space: nowrap;
     }
     .third-section-descr{
         font-size: 26px;
@@ -410,19 +457,19 @@ input[type="submit"]{
 
     input{
         width: 60%; 
-        font-size: 22px;
+        font-size: 20px;
+        padding: 10px 0px;
     }
     .fourth-section{
         flex-basis: 100%;
         margin-right: 0;
         height: 350px;
         padding: 25px;
-        
     }
     .fourth-section-title{
         margin-top: 90px;
         text-align: center;
-        padding-left: 55px;
+        padding-left: 0;
     }
     .firth-section{
         flex-basis: 100%;
@@ -432,7 +479,7 @@ input[type="submit"]{
         padding: 25px;
     }
     .firth-section-title{
-    padding-left: 45px;
+    margin-top: 10px;
 }
     .sixth-section{
         flex-basis: 100%;
